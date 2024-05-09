@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Ubuntu&display=swap');
+body{
+
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+font-family: 'Ubuntu', sans-serif;
+     
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 199px;
+    background-color: rgb(185, 69, 69);
+    color: rgb(222, 224, 228);
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 150px;
+    padding: 0 8px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 5.3rem;
+}
+
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 65%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 210px;
+    background-color: rgb(184, 53, 53);
+    color: white;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.icons{
+    margin-top: 34px;
+
+}
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 150px;
+}
+
+.songItem{
+    height: 150px;
+    display: flex;
+    background-color: white;
+    width: 250%;
+    color: black;
+    margin: 25px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.songItem img{
+    width: 130px;
+    margin: 0 23px;
+    border-radius: 50px;
+
+}
+
+.timestamp{
+    margin: 0 23px;
+
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+ 
+.songInfo{
+    position: absolute;
+    left: 1vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.1 ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
